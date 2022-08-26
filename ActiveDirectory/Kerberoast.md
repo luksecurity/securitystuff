@@ -22,3 +22,8 @@ If this in the case, transition the service to use a computer account. and ensur
 
 - give the user an unbreakable password - Andy Robbins recommends a password of 64 chars.
 Then reconfigure the service by doing the auth kerberos to start as a user with the correct password.
+
+## Talk
+
+[DerbyCon 9 Hacking Conference - BloodHound Head to Tail](https://www.youtube.com/watch?v=ehObaDPEHnc&t=929s)  
+Andy Robbins and Rohan Vazarkar
