@@ -26,4 +26,4 @@ Then reconfigure the service by doing the auth kerberos to start as a user with 
 ## Talk
 
 [DerbyCon 9 Hacking Conference - BloodHound Head to Tail](https://www.youtube.com/watch?v=ehObaDPEHnc&t=929s)  
-Andy Robbins and Rohan Vazarkar
+Andy Robbins (@_wald0) and Rohan Vazarkar (@CptJesus)
