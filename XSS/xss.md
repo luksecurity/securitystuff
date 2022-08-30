@@ -2,7 +2,7 @@
 
 - Setup ngrok / requestbin
 - Setup un serveur web python / php
-- Setup un webshell basique `file.php`
+- Créer un webshell basique `file.php`
 
 `<?php $cookie = $_GET["cookie"]; ?>`
 
