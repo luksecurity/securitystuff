@@ -1,5 +1,4 @@
 ### Find Unquoted Service Paths without tool
-
 by @Alh4zr3d
 
 ```powershell
