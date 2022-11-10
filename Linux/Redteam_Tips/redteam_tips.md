@@ -1,5 +1,6 @@
-### Redteam Tips for Linux
-by @Alh4zr3d
+# Redteam Tips for Linux
+
+## History and syslogd - @Alh4zr3d
 
 ```sh
 "export HISTFILE=/dev/null"                   # Disable history
