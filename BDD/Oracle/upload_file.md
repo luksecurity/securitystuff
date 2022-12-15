@@ -1,5 +1,9 @@
 # Upload file to IIS web server via oracle DB (sysdba priv required)
 
+Connect to Oracle DB with sqlplus64
+
+`sqlplus64 <user>/<password>@<IP_target>:<port>/<SID> as sysdba`
+
 ## Manually
 
 ```
