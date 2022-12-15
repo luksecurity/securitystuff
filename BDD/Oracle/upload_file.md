@@ -9,4 +9,6 @@ begin
   utl_file.put_line(f,s);
   utl_file.fclose(f);
 end;
+
+After that apply the changes with /
 ```
