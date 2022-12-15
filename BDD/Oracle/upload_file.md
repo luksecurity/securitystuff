@@ -1,4 +1,4 @@
-## Upload file to web server via oracle DB with sysdba priv
+## Upload file to IIS web server via oracle DB with sysdba priv
 
 ```
 declare
