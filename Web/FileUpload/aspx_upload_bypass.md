@@ -10,13 +10,13 @@
 - click on Payloads tab and add the list of extensions
 - click on start attack
 
-If the config extension is accepted, you can use the file web.config to have an RCE.
+If the config extension is accepted, you can use the file web.config to have an RCE.  
 https://lonewolfzero.wordpress.com/2018/05/28/rce-by-uploading-a-web-config-asp/
 
 ## Sources
 
-- Repo PayloadsAllTheThings - swissky | webshell
+- Repo PayloadsAllTheThings - swissky | webshell  
 https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Upload%20Insecure%20Files/Configuration%20IIS%20web.config/web.config
 
-- RCE by upload a web.config asp
+- RCE by upload a web.config asp  
 https://lonewolfzero.wordpress.com/2018/05/28/rce-by-uploading-a-web-config-asp/
