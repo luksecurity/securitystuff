@@ -1,6 +1,6 @@
 # asp, aspx file upload bypass
 
-## When he accepts images files (.jpg / .png / .gif)
+## When he blocks files .txt / .aspx / .asp
 
 ### Fuzzing of accepted extensions
 
