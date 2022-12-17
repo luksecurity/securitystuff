@@ -15,7 +15,7 @@ https://lonewolfzero.wordpress.com/2018/05/28/rce-by-uploading-a-web-config-asp/
 
 ## Sources
 
-- Repo PayloadsAllTheThings - swissky | web.config
+- Repo PayloadsAllTheThings - swissky | webshell
 https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Upload%20Insecure%20Files/Configuration%20IIS%20web.config/web.config
 
 - RCE by upload a web.config asp
