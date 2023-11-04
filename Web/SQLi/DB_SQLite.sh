@@ -2,10 +2,8 @@
 
 ## Déterminer le nombre de colonnes
 
-```sh
 ' union select 1-- -  # erreur
 ' union select 1, null-- - # pas d'erreur, il y a donc deux colonnes
-```
 
 ## Retrouver la version de la base de données
 
