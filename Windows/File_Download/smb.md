@@ -1,6 +1,6 @@
 # SMB File Transfer
 
-```
+```powershell
 # attack
 sudo impacket-smbserver {share} $(pwd) -smb2support -user {user} -password {password}
 
