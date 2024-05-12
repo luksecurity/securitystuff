@@ -18,7 +18,7 @@ def main():
     args = parser.parse_args()
 
     try:
-        ciphertext = unhexlify(args.encrypted)
+        ciphertext = unhexlify(args.enc)
     except ValueError:
         print("Invalid hex string provided for ciphertext.")
         return
