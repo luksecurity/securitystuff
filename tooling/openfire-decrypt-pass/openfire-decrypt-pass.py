@@ -1,15 +1,6 @@
 #!/usr/bin/env python3
 # Author - Luks (@luksecurity_)
 
-ascii_art = """
-   ___                    __ _            ____                             _     ____               
-  / _ \ _ __   ___ _ __  / _(_)_ __ ___  |  _ \  ___  ___ _ __ _   _ _ __ | |_  |  _ \ __ _ ___ ___ 
- | | | | '_ \ / _ \ '_ \| |_| | '__/ _ \ | | | |/ _ \/ __| '__| | | | '_ \| __| | |_) / _` / __/ __|
- | |_| | |_) |  __/ | | |  _| | | |  __/ | |_| |  __/ (__| |  | |_| | |_) | |_  |  __/ (_| \__ \__ \
-  \___/| .__/ \___|_| |_|_| |_|_|  \___| |____/ \___|\___|_|   \__, | .__/ \__| |_|   \__,_|___/___/
-       |_|                                                     |___/|_|                             
-"""
-
 import argparse
 import hashlib
 from Crypto.Cipher import Blowfish
@@ -22,6 +13,16 @@ def decrypt_openfirepass(ciphertext, key):
     return unpad(decrypted_data, Blowfish.block_size)
 
 def main():
+    ascii_art = """
+   ___                    __ _            ____                             _     ____               
+  / _ \ _ __   ___ _ __  / _(_)_ __ ___  |  _ \  ___  ___ _ __ _   _ _ __ | |_  |  _ \ __ _ ___ ___ 
+ | | | | '_ \ / _ \ '_ \| |_| | '__/ _ \ | | | |/ _ \/ __| '__| | | | '_ \| __| | |_) / _` / __/ __|
+ | |_| | |_) |  __/ | | |  _| | | |  __/ | |_| |  __/ (__| |  | |_| | |_) | |_  |  __/ (_| \__ \__ \
+  \___/| .__/ \___|_| |_|_| |_|_|  \___| |____/ \___|\___|_|   \__, | .__/ \__| |_|   \__,_|___/___/
+       |_|                                                     |___/|_|                             
+    """
+    print(ascii_art)
+   
     parser = argparse.ArgumentParser(description="Decrypt Openfire password")
     parser.add_argument("-e", "--enc", help="The ciphertext in hexadecimal format", required=True)
     parser.add_argument("-k", "--key", help="The key used for decryption", required=True)
