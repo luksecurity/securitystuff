@@ -3,13 +3,12 @@
 
 import csv
 import re
-import sys
+import argparse
 
 def parse_nmap_output(nmap_output):
     ip_pattern = re.compile(r'Nmap scan report for (\d+\.\d+\.\d+\.\d+)')
     port_pattern = re.compile(r'(\d+)/tcp\s+(\w+)\s+(\w+)\s+(.*)')
 
-    # Variables to store parsed data
     current_ip = None
     parsed_data = []
 
@@ -44,10 +43,13 @@ def main(input_file, output_file):
     write_to_csv(parsed_data, output_file)
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python nmap_to_csv.py <input_file> <output_file>")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="Parse Nmap output and convert to CSV")
+    parser.add_argument('-i', '--input', required=True, help='Input Nmap file')
+    parser.add_argument('-o', '--output', required=True, help='Output CSV file')
 
-    input_file = sys.argv[1]
-    output_file = sys.argv[2]
+    args = parser.parse_args()
+
+    input_file = args.input
+    output_file = args.output
+
     main(input_file, output_file)
