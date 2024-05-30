@@ -1,0 +1,3 @@
+- Modifier le PDF name dans le header du tableau pour mettre le type de fichier
+- Regarder pour DL les fichiers dans le dossier du type de fichier et non pas à la racine
+- Trouver un moyen de parser aussi les paths qui ne font pas parti de wayback machines (piste ffuf)
