@@ -24,7 +24,7 @@ def bruteforce(enc_file, wordlist):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Decrypt pswm master password")
-    parser.add_argument("-m", "--master", required=True, help="Path to the master password file")
+    parser.add_argument("-m", "--master", required=True, help="Path to the encrypted master password file")
     parser.add_argument("-w", "--wordlist", required=True, help="Path to the wordlist file")
 
     if len(sys.argv) == 1:
