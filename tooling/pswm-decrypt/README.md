@@ -9,4 +9,4 @@ pip3 install -r requirements.txt
 python3 pswm_decrypt.py -m "encryptedmasterpassword.txt" -w "wordlist.txt"
 ```
 
-![](https://github.com/luksecurity/securitystuff/blob/main/tooling/pswm-decrypt/static/help-pswm2.png)
+![](https://github.com/luksecurity/securitystuff/blob/main/tooling/pswm-decrypt/static/pswm-help2.png)
