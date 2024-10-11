@@ -8,6 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from tabulate import tabulate
+import sys
 
 def add_scheme_if_missing(domain):
     if not domain.startswith(('http://', 'https://')):
@@ -69,6 +70,7 @@ def download_files(domain, urls, file_type_dir):
 def extract_metadata(domain, file_type_dir):
     print("\033[92m[+] Extracting metadata from downloaded files\033[0m")
     domain_name = domain.split("//")[-1].split("/")[0]
+
     file_pattern = os.path.join(domain_name, file_type_dir, '*')
     cmd = f"exiftool {file_pattern} | grep -E '^(Creator|Author|File Name)\\s*:'"
     result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
@@ -121,6 +123,7 @@ def main():
     parser.add_argument("-t", "--file_type", required=True, help="File types to download (e.g., pdf,docx,xlsx)", type=str)
 
     args = parser.parse_args()
+
     file_type = args.file_type
 
     web_files = find_files_on_site(args.domain, file_type)
@@ -128,9 +131,11 @@ def main():
 
     all_urls = set(web_files + archive_files)
 
-    if all_urls:
-        download_files(args.domain, all_urls, file_type)
+    if not all_urls:
+        print(f"\033[93m[-] No {file_type} files found either on the website or in the archive. Exiting.\033[0m")
+        sys.exit(0)
 
+    download_files(args.domain, all_urls, file_type)
     extract_metadata(args.domain, file_type)
 
 if __name__ == "__main__":
