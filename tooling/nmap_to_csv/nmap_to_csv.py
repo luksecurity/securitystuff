@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Author - Luks (@luksecurity_)
+# Author - luks (@luksecurity_)
 
 import csv
 import re
