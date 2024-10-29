@@ -7,7 +7,7 @@ import argparse
 
 def parse_nmap_output(nmap_output):
     ip_pattern = re.compile(r'Nmap scan report for (?:[^\s]+ )?\(?(\d+\.\d+\.\d+\.\d+)\)?')
-    port_pattern = re.compile(r'(\d+)/tcp\s+(\w+)\s+(\w+)\s+(.*)')
+    port_pattern = re.compile(r'(\d+)/(tcp|udp)\s+(\w+)\s+(\w+)?\s*(.*)')
 
     current_ip = None
     parsed_data = []
@@ -20,16 +20,17 @@ def parse_nmap_output(nmap_output):
         port_match = port_pattern.search(line)
         if port_match and current_ip:
             port = port_match.group(1)
-            state = port_match.group(2)
-            service = port_match.group(3)
-            banner = port_match.group(4).strip()
+            protocol = port_match.group(2)
+            state = port_match.group(3)
+            service = port_match.group(4) if port_match.group(4) else "unknown"
+            banner = port_match.group(5).strip()
             if state == "open":
-                parsed_data.append([current_ip, port, service, state, banner])
+                parsed_data.append([current_ip, port, protocol, service, state, banner])
 
     return parsed_data
 
 def write_to_csv(parsed_data, output_file):
-    headers = ['IP', 'Port', 'Service', 'Statut', 'Bannière']
+    headers = ['IP', 'Port', 'Protocol', 'Service', 'Statut', 'Bannière']
     with open(output_file, mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(headers)
