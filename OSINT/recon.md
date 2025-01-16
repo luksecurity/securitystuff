@@ -3,10 +3,8 @@
 ## Subdomains
 
 ```
-subfinder -d <domain> -o subfinder.txt
-sublist3r -d <domain> -o sublister.txt
-cat subfinder.txt sublister.txt >> subs.txt
-rm subfinder.txt sublister.txt
-httpx -l subs.txt -threads 200 -o alive.txt
-cat alive.txt | gau --subs --blacklist png,jpg,jpeg,svg | tee -a endpoints.txt
+subfinder -d example.com -all > subfinder.txt
+assetfinder -subs-only example.com > assetfinder.txt
+curl -s "https://crt.sh/?q=%25.example.com&output=json" | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u > crtsh.txt
+cat *.txt | sort -u > all_subs.txt
 ```
