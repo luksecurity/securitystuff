@@ -2,8 +2,8 @@
 
 ```text
 # User
-find / -user luks -ls 2>/dev/null | grep -v '/proc\|/sys\|/home\|/run
+find / -user luks -ls 2>/dev/null | grep -v '/proc\|/sys\|/home\|/run'
 
 # Group
-find / -group adm -ls 2>/dev/null | grep -v '/proc\|/sys\|/home\|/run
+find / -group adm -ls 2>/dev/null | grep -v '/proc\|/sys\|/home\|/run'
 ```
