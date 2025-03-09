@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# Author - luks (@luksecurity_)
+
 import itertools
 
 base = "Motdepasse"
