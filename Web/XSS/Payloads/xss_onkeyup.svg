@@ -1,4 +1,4 @@
-<!-- Change content-type to image/jpg -->
+<!-- Change content-type to image/jpg or image/svg+xml or image/png or -->
 
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
     <foreignObject width="100%" height="100%">
