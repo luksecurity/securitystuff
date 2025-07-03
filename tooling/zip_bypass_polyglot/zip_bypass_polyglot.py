@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Author - luks (@luksecurity_)
+# ref: https://perception-point.io/blog/evasive-concatenated-zip-trojan-targets-windows-users/ 
 
 import os
 import subprocess
