@@ -48,6 +48,8 @@
   → Supply chain attack vectors and related domains.
 - [ ] Search for company phone numbers  
   → From website, social media, or public databases. Useful for social engineering.
+- [ ] Find info on executives & public records (Pappers, Societe.ninja)  
+  → Leadership details, company filings, financials, governance.
 
 ## 5. Public Files & Data
 - [ ] Google Dorks (site:target.com, intitle, inurl, filetype…)  
