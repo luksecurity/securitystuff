@@ -14,7 +14,7 @@
   → Discover subdomains and certificate issuance patterns.
 
 ## 2. DNS & Infrastructure Mapping
-- [ ] Enumerate subdomains (Amass, Subfinder, crt.sh, VirusTotal…)  
+- [ ] Enumerate subdomains (Amass, Subfinder, crt.sh, VirusTotal, rengine-ng...)  
   → Expands the attack surface by discovering new hosts.
 - [ ] Validate DNS resolutions (A, AAAA, CNAME, MX, TXT)  
   → Confirm live infrastructure and linked services.
